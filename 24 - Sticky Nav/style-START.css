@@ -49,6 +49,9 @@ nav {
   position: relative;
   z-index: 1;
 }
+.fix-nav nav {
+  position: fixed;
+}
 
 nav ul {
   margin: 0;
@@ -72,6 +75,10 @@ li.logo {
   transition: all .5s;
   font-weight: 600;
   font-size: 30px;
+}
+
+.fix-nav li.logo{
+  max-width: 500px;
 }
 
 li.logo a {

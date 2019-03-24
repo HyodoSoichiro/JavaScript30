@@ -1,0 +1,17 @@
+items
+dragflag = false
+x
+
+fun findStart (e)
+x = e.x
+
+fun dragItems (e)
+if (dragflag) {
+    walkX = e.x - x
+    this.style.transform = ${ -walk * 10}px
+}
+
+items addEvent mousemove dragItems
+items addEvent mousedown () => dragflag = true && findStart
+items addEvent mouseup  () => dragflag = false
+items addEvent mouseleave () => dragflag = false
