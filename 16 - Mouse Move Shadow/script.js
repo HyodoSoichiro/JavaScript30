@@ -1,7 +1,7 @@
 const hero = document.querySelector('.hero');
 const h1 = hero.querySelector('h1');
 const walk = 50;
-// console.log(w, h);
+// 
 
 function funkyShadow(e) {
   const { offsetWidth: w, offsetHeight: h, } = hero;
@@ -19,7 +19,7 @@ function funkyShadow(e) {
         ${walkX}px ${walkY * -1}px ${blurWalk}px rgb(255, 255, 0),
         ${walkX * -1}px ${walkY}px ${blurWalk}px rgb(255, 0, 255)`;
 
-  console.log(blurWalk);
+  
 }
 
 hero.addEventListener('mousemove', funkyShadow);
@@ -76,7 +76,7 @@ hero.addEventListener('mousemove', funkyShadow);
 //                               ${yWalk * -1}px ${xWalk}px ${blurWalk}px rgba(0,0,255,0.7)`;
 
 // //     console.dir(blurWalk);
-// //     // console.log(xWalk, yWalk);
+// //     // 
 // //   }
 
 // //   hero.addEventListener('mousemove', shadow);

@@ -1,5 +1,5 @@
 // const a = document.querySelector('audio[data-key="a"]');
-// console.log(a);
+// 
 // a.play();
 function soundPlay() {
     this.classList.add('playing');

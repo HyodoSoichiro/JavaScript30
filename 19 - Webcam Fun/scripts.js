@@ -7,7 +7,7 @@ const snap = document.querySelector('.snap');
 function getVideo() {
 	navigator.mediaDevices.getUserMedia({ video: true, audio: false})
 	.then( localMediaStream => {
-		console.log(localMediaStream);
+		
 		video.srcObject = localMediaStream;
 	    video.play();
 	})
@@ -33,7 +33,7 @@ function paintToCanvas() {
 		//  put thme back to canvas4
 		ctx.putImageData(pixels, 0 ,0);
 
-		// console.log(pixels);
+		// 
 
 	}, 16);
 }
@@ -49,7 +49,7 @@ function takePhoto(){
 	link.setAttribute('download', 'handsome');
 	link.innerHTML = `<img src="${data}" alt="Handsome Man" />`;
 	strip.insertBefore( link , strip.firstChild );
-	// console.log(data);
+	// 
 }
 function redEffect(pixels){
 	for (let i = 0; i < pixels.data.length; i+=4) {

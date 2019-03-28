@@ -23,50 +23,50 @@ const comments = [
 const now = new Date();
 const pastYear = now.getFullYear() - 19;
 const judge = people.some(per => per.year > pastYear);
-console.log(judge);
+
 
 const judge2 = people.every(per => per.year > pastYear);
-console.log(judge2);
+
 
 // Array.prototype.find()
 // Find is like filter, but instead returns just the one you are looking for
 // find the comment with the ID of 823423
 
 const judge3 = comments.find(mes => mes.id === 823423);
-console.log(judge3);
+
 
 // Array.prototype.findIndex()
 // Find the comment with this ID
 // delete the comment with the ID of 823423
 
 const findID = comments.findIndex(mes => mes.id === 823423);
-console.log(findID);
+
 
 // comments.splice(findID, 1);
-// console.log(comments);
+// 
 
 const newComments = [
     ...comments.slice(0, findID),
     ...comments.slice(findID + 1),
 ];
 
-console.log(newComments);
+
 
 // // Some and Every Checks
 // // Array.prototype.some() // is at least one person 19 or older?
 // // Array.prototype.every() // is everyone 19 or older?
 
 // const someOlderThanNineteen = people.some(person => person.year > (2019 - 19));
-// console.log(someOlderThanNineteen);
+// 
 
 // const everyOlderThanNineteen = people.every(person => person.year > (2019 - 19));
-// console.log(everyOlderThanNineteen);
+// 
 // // Array.prototype.find()
 // // Find is like filter, but instead returns just the one you are looking for
 // // find the comment with the ID of 823423
 
 // const findCome = comments.find(comment => comment.id === 823423);
-// console.log(findCome.text);
+// 
 
 // // Array.prototype.findIndex()
 // // Find the comment with this ID
@@ -75,5 +75,5 @@ console.log(newComments);
 // const findIndexCome = comments.findIndex(comment => comment.id === 823423);
 // comments[findIndexCome].text.delete();
 
-// console.log(comments);
+// 
 

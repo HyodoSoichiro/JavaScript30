@@ -37,8 +37,8 @@ triggers.forEach(trig => trig.addEventListener('mouseenter', highlight));
 //   highlight.style.height = `${cords.height}px`;
 //   highlight.style.transform = `translate(${cords.x}px, ${cords.y}px)`;
 
-//   //   console.log(window.scrollY);
-//   //   console.log(x, y, width, height);
+//   //   
+//   //   
 // }
 
 // triggers.forEach(trig => trig.addEventListener('mouseenter', transHighlight));
@@ -51,7 +51,7 @@ triggers.forEach(trig => trig.addEventListener('mouseenter', highlight));
 
 // // function highlightLink() {
 // //   const linkCords = this.getBoundingClientRect();
-// // console.log(linkCords);
+// // 
 // // const coords = {
 // //   width: linkCords.width,
 // //   height: linkCords.height,

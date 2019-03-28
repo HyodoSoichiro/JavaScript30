@@ -114,10 +114,10 @@ canvas.addEventListener('mouseout', () => flgDrawing = false);
 // 	}
 // 	if (incrementWidth) {
 // 		ctx.lineWidth++;
-// 		console.log(incrementWidth);
+// 		
 // 	} else {
 // 		ctx.lineWidth--;
-// 		console.log(incrementWidth);
+// 		
 // 	}
 // }
 

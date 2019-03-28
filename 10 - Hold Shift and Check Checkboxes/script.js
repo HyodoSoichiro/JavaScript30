@@ -1,6 +1,6 @@
 const checkboxes = document.querySelectorAll('input[type="checkbox"]');
 let lastBox;
-console.log(checkboxes);
+
 
 function selectChecxbox(e) {
   let inBetween = false;
@@ -14,7 +14,7 @@ function selectChecxbox(e) {
   }
     //
   lastBox = this;
-  // console.log(e);
+  // 
 }
 
 checkboxes.forEach(box => box.addEventListener('click', selectChecxbox));
@@ -23,12 +23,12 @@ checkboxes.forEach(box => box.addEventListener('click', selectChecxbox));
 
 // let lastChecked;
 // function handlecheck(e) {
-//   console.log(e);
+//   
 //   let inBetween = false;
 
 //   if (e.shiftKey && this.checked) {
 //     checkboxes.forEach((checkbox) => {
-//       console.log(checkbox);
+//       
 
 //       if (checkbox === this || checkbox === lastChecked) {
 //         inBetween = !inBetween;

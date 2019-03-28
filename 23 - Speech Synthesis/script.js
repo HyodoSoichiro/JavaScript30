@@ -56,7 +56,7 @@ stopButton.addEventListener('click', () => toggleSpeak(false));
 //     .map(voice => `<option value="${voice.name}">${voice.name}(${voice.lang})</option>`)
 //     .join('');
 
-//   // console.log(voiceOptions);
+//   // 
 // }
 
 // function toggle(startOver = true) {
@@ -71,7 +71,7 @@ stopButton.addEventListener('click', () => toggleSpeak(false));
 
 // function setOption() {
 //   msg[this.name] = this.value;
-//   // console.log(msg);
+//   // 
 //   toggle();
 //   // speechSynthesis.speak(msg);
 // }
@@ -85,7 +85,7 @@ stopButton.addEventListener('click', () => toggleSpeak(false));
 
 // //   function populateVoices() {
 // //     voices = this.getVoices();
-// //     // console.log(voices);
+// //     // 
 // //     voicesDropdown.innerHTML = voices
 // //                   .filter(voice => voice.lang.includes('en'))
 // //                   .map(voice => `<<option value="${voice.name}">${voice.name} (${voice.lang})</option>`)
@@ -105,7 +105,7 @@ stopButton.addEventListener('click', () => toggleSpeak(false));
 // //   }
 
 // //   function setOption() {
-// //     console.log(this.name, this.value);
+// //     
 // //     msg[this.name] = this.value;
 // //     toggle();
 // //   }

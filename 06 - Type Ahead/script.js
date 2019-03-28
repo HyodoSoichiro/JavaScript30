@@ -9,7 +9,7 @@ fetch(endpoint)
   .then(data => places.push(...data));
 
 function searchFunc(data, places) {
-  //   console.log(data);
+  //   
   return places.filter(blod => {
     const regex = new RegExp(data, 'gi');
     return blod.city.match(regex) || blod.state.match(regex);

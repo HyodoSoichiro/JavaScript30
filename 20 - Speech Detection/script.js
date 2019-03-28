@@ -25,7 +25,7 @@ regognition.addEventListener('result', transcriptSync);
 regognition.addEventListener('end', regognition.start);
 regognition.start();
 
-// console.log(regognition);
+// 
 
 // window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
@@ -37,7 +37,7 @@ regognition.start();
 // words.appendChild(p);
 
 // regognition.addEventListener('result', (e) => {
-//     // console.log(e.results);
+//     // 
 //     const transcript = Array.from(e.results)
 //     .map(result => result[0])
 //     .map(result => result.transcript)
@@ -50,10 +50,10 @@ regognition.start();
 //     }
 
 //     if (transcript.includes('うさぎ')) {
-//         console.log('🐰🐰🐰🐰🐰🐰🐰🐰🐰🐰🐰🐰🐰🐰🐰🐰🐰🐰🐰🐰🐰🐰🐰🐰🐰🐰🐰🐰🐰🐰🐰🐰🐰');
+//         
 //     }
 //     if (transcript.includes('キリン')) {
-//         console.log('🦒🦒🦒🦒🦒🦒🦒🦒🦒🦒🦒🦒🦒🦒🦒🦒🦒🦒🦒🦒🦒🦒🦒🦒🦒🦒🦒🦒🦒🦒🦒🦒');
+//         
 //     }
 // });
 

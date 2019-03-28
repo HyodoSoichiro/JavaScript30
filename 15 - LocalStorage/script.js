@@ -27,7 +27,7 @@ function addList(e) {
     localStorage.setItem('items', JSON.stringify(list));
 
     this.reset();
-    // console.log(list);
+    // 
 }
 
 function checkItem(e) {
@@ -59,7 +59,7 @@ platesListUP(list, plateLists);
 
 //   populateList(items, itemsList);
 //   localStorage.setItem('items', JSON.stringify(items));
-//   //   console.log(items);
+//   //   
 // }
 
 // function populateList(plates = [], plateList) {
@@ -78,7 +78,7 @@ platesListUP(list, plateLists);
 //   if (!e.target.matches('input')) return;
 //   const index = e.target.dataset.index;
 //   items[index].done = !items[index].done;
-//   // console.log(items[index].done);
+//   // 
 //   localStorage.setItem('items', JSON.stringify(items));
 //   populateList(items, itemsList);
 // }
@@ -89,7 +89,7 @@ platesListUP(list, plateLists);
 // // const checkBoxes = document.querySelectorAll('[type="checkbox"]');
 // itemsList.addEventListener('click', toggleDone);
 
-// // console.log(checkBoxes);
+// // 
 
 // //   function addItem(e) {
 // //     e.preventDefault();
@@ -119,12 +119,12 @@ platesListUP(list, plateLists);
 // //   function toggleDone(e) {
 // //     if (!e.target.matches('input')) return;
 // //     const index = e.target.dataset.index;
-// //     console.log(!items[index].done);
+// //     
 // //     items[index].done = !items[index].done;
 // //     localStorage.setItem('items', JSON.stringify(items));
 // //     populateList(items, itemsList);
 
-// //     // console.log(e.target);
+// //     // 
 // //   }
 
 // //   addItems.addEventListener('submit', addItem);

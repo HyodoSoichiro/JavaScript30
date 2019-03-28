@@ -7,7 +7,7 @@ const snap = document.querySelector('.snap');
 function getVideo() {
   navigator.mediaDevices.getUserMedia({ video: true, audio: false })
     .then(localMediaStream => {
-      console.log(localMediaStream);
+      
     
 //  DEPRECIATION : 
 //       The following has been depreceated by major browsers as of Chrome and Firefox.

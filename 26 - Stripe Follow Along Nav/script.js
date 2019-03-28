@@ -3,12 +3,12 @@ const nav = document.querySelector('.top');
 const triggers = document.querySelectorAll('.cool > li');
 const background = document.querySelector('.dropdownBackground');
 const arrow = document.querySelector('.arrow');
-// console.log(triggers, background, arrow);
+// 
 
 function insertBack() {
   background.classList.add('open');
 
-  console.log(this.getBoundingClientRect());
+  
   this.classList.add('trigger-enter');
   setTimeout(() => this.classList.contains('trigger-enter') && this.classList.add('trigger-enter-active'), 150);
   const dropDown = this.querySelector('.dropdown');
@@ -56,17 +56,17 @@ triggers.forEach(trigger => trigger.addEventListener('mouseleave', removeClass))
 //   background.style.setProperty('height', `${cords.height}px`);
 //   background.style.setProperty('transform', `translate(${cords.left}px, ${cords.top}px)`);
 
-//   console.log([cords.top, cords.left, ]);
+//   
 // }
 
 // function handleLeave() {
 //     this.classList.remove('trigger-enter', 'trigger-enter-active');
 //     this.classList.remove('trigger-enter', 'trigger-enter-active');
 //     background.classList.remove('open');
-//     //   console.log('It leave!!!');
+//     //   
 // }
 
 // triggers.forEach(trig => trig.addEventListener('mouseenter', handleEnter));
 // triggers.forEach(trig => trig.addEventListener('mouseleave', handleLeave));
 
-// // console.log([triggers, background, nav,]);
+// // 

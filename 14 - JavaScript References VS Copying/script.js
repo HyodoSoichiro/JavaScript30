@@ -1,16 +1,16 @@
 // start with strings, numbers and booleans
 // let age = 100;
 // let age2 = 200;
-// console.log(age, age2);
+// 
 
 // age = 200;
-// console.log(age, age2);
+// 
 // let name = 'Wes';
 // let name2 = name;
-// console.log(name,name2);
+// 
 
 // name2 = 'Wesley';
-// console.log(name,name2);
+// 
 
 // console.clear();
 // Let's say we have an array
@@ -19,10 +19,10 @@ const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
 // and we want to make a copy of it.
 // const team = [...players];
 const team = Array.from(players);
-console.log(players, team);
+
 
 team[3] = 'Lucky';
-console.log(players, team);
+
 
 console.clear();
 // You might think we can just do something like this:
@@ -65,13 +65,13 @@ const person = {
 
 // how do we take a copy instead?
 // const cap2 = Object.assign({}, person, {number:66, age : 12});
-// console.log(cap2);
+// 
 // We will hopefully soon see the object ...spread
 const cap4 = { ...person };
 cap4.age = 42;
 cap4.position = 'Third';
 cap4.relative = 'cousin';
-console.log(cap4);
+
 
 console.clear();
 
@@ -85,9 +85,9 @@ const wes = {
   },
 };
 
-console.log(wes);
+
 
 WesRenewal = { ...wes };
 WesRenewal.social.twitter = '@wesRenewal';;
 
-console.log(WesRenewal);
+

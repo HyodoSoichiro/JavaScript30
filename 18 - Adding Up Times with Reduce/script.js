@@ -13,7 +13,7 @@ const leftSeconds = totalSeconds % 3600;
 const mins = Math.floor((leftSeconds) / 60);
 const secs = Math.floor((leftSeconds) % 60);
 
-console.log(`${hours}:${mins}:${secs}`);
+
 
 // const times = [...document.querySelectorAll('li[data-time]')];
 // const allSecs = times
@@ -29,7 +29,7 @@ console.log(`${hours}:${mins}:${secs}`);
 // const mins = Math.floor(secondLeft / 60);
 // const secs = secondLeft % 60;
 
-// console.log(`${hours}:${mins}:${secs}`);
+// 
 
 // // const timeNodes = Array.from(document.querySelectorAll('[data-time]'));
 // // const seconds = timeNodes.map(node => node.dataset.time)
@@ -45,4 +45,4 @@ console.log(`${hours}:${mins}:${secs}`);
 // // const mimutes = Math.floor(secondsLeft / 60);
 // // const sec = secondsLeft % 60;
 
-// // console.log(hours, mimutes, sec);
+// // 

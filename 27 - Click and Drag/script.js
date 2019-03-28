@@ -37,7 +37,7 @@ items.addEventListener('mouseleave', () => {
 //     slider.classList.add('active');
 //     startX = e.pageX - slider.offsetLeft;
 //     scrollLft = slider.scrollLeft;
-//     console.log(scrollLft);
+//     
 // });
 
 // slider.addEventListener('mouseleave', () => {
@@ -57,7 +57,7 @@ items.addEventListener('mouseleave', () => {
 //     const walk = (x - startX) * 3.5;
 //     slider.scrollLeft = scrollLft - walk;
 //     // scrollLeft = e.pageX - startX;
-//     // console.log();
+//     // 
 // });
 
 // /*

@@ -10,7 +10,7 @@
     // Regular
 
     // Interpolated
-    console.log('Hello I am a %s', '💩');
+    
     // Styled
 
     // warning!
@@ -29,10 +29,10 @@
     console.clear();
 
     // Viewing DOM Elements
-    console.log(p);
+    
     console.dir(p);
 
-    // console.log(p);
+    // 
     // console.dir(p);
 
 
@@ -40,9 +40,9 @@
     // Grouping together
     dogs.forEach((dog) => {
         console.groupCollapsed(`${dog.name}`);
-        console.log(`This is ${dog.name}`);
-        console.log(`${dog.name} is ${dog.age} years old`);
-        console.log(`${dog.name} is ${dog.age * 7} dog years old`);
+        
+        
+        
         console.groupEnd(`${dog.name}`);
       });
 
@@ -54,7 +54,7 @@
     fetch('https://api.github.com/users/wesbos')
     .then(data => data.json())
     .then((data) => {
-        console.log(data);
+        
         console.timeEnd('yjkljl');
     });
 

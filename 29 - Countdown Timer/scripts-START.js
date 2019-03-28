@@ -12,7 +12,7 @@ function displayTimeLeft(sec) {
 }
 
 function displayEndTime(timestamp) {
-  // console.log(timestamp);
+  // 
   const end = new Date(timestamp);
   const hour = end.getHours() > 12 ? end.getHours() - 12 : end.getHours();
   const minutes = end.getMinutes();
@@ -28,7 +28,7 @@ function timer(seconds) {
   const then = now + seconds * 1000;
   displayTimeLeft(seconds);
   displayEndTime(then);
-  // console.log(now, then);
+  // 
 
   countdown = setInterval(() => {
     const secondsLeft = Math.round((then - Date.now()) / 1000);
@@ -54,5 +54,5 @@ document.customForm.addEventListener('submit', function (e) {
   const mins = this.minutes.value;
   this.reset();
   timer(mins * 60);
-  console.log(mins);
+  
 });
