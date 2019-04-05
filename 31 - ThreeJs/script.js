@@ -23,7 +23,7 @@ mesh = createMesh(side);
 camera.position.set(1, 20, 20);
 
 let loader = new THREE.GLTFLoader();
-loader.load('glTF/slipper_test02_glTF.gltf', (gltf) => {
+loader.load('glTF/slipper_test_glTF.gltf', (gltf) => {
 	scene.add(gltf.scene);
 }, undefined, (error) => {
 	console.error(error);
