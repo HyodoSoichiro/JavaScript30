@@ -1,4 +1,3 @@
-// forked from FumioNonaka's "three.js r85: Rotating a icosahedron" http://jsdo.it/FumioNonaka/gpdN
 var width = window.innerWidth;
 var height = window.innerHeight;
 var side = Math.min(width, height) / 30;
@@ -12,7 +11,7 @@ function init() {
 	camera = new THREE.PerspectiveCamera(30, width / height, 1, 1000);
 	renderer = createRenderer(width, height);
 	mesh = createMesh(side);
-	camera.position.z = 100;
+	camera.position.z = 5;
 	scene.add(mesh);
 	controls = new THREE.OrbitControls(camera);
 	controls.autoRotate = true;
