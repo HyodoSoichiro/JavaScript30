@@ -22,25 +22,28 @@ window.addEventListener('resize', () => {
 mesh = createMesh(side);
 camera.position.set(1, 20, 20);
 
-// scene.add(mesh);
 let loader = new THREE.GLTFLoader();
-loader.load('glTF/slipper_test_glTF.gltf', (gltf) => {
+loader.load('glTF/slipper_test02_glTF.gltf', (gltf) => {
 	scene.add(gltf.scene);
 }, undefined, (error) => {
 	console.error(error);
 });
 
-let ambientLight = new THREE.AmbientLight(0xFFFFFF, 2.5);
+
+let ambientLight = new THREE.AmbientLight(0xFFFFFF, 3);
 scene.add(ambientLight);
 
 controls = new THREE.OrbitControls(camera);
+controls.autoRotateSpeed = 0.4;
 controls.autoRotate = true;
 update();
 // }
 
 function createRenderer(width, height) {
-	let renderer = new THREE.WebGLRenderer();
+	let renderer = new THREE.WebGLRenderer({ antialias: true, });
 	renderer.setSize(width, height);
+	renderer.doubleSided = true;
+	renderer.gammaOutput = true; // !important! Making contrast normal.
 	document.body.appendChild(renderer.domElement);
 	return renderer;
 }
@@ -53,8 +56,8 @@ function createMesh(radius) {
 }
 
 function update() {
-	// mesh.rotation.x += 0.01;
-	// mesh.rotation.y += 0.01;
+	mesh.rotation.x += 0.01;
+	mesh.rotation.y += 0.01;
 	controls.update();
 	requestAnimationFrame(update);
 	renderer.render(scene, camera);
