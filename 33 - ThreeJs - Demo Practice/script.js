@@ -16,6 +16,14 @@ function init() {
 	controls = new THREE.OrbitControls(camera);
 	controls.autoRotate = true;
 	update();
+	
+	window.addEventListener('resize', () => {
+		let width = window.innerWidth;
+		let height = window.innerHeight;
+		renderer.setSize(width, height);
+		camera.aspect = width / height;
+		camera.updateProjectionMatrix();
+	});
 }
 function createRenderer(width, height) {
 	var renderer = new THREE.WebGLRenderer();
