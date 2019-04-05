@@ -25,14 +25,12 @@ function createRenderer(width, height) {
 	return renderer;
 }
 function createMesh(radius) {
-	var geometry = new THREE.IcosahedronGeometry(radius);
+	var geometry = new THREE.BoxGeometry(1, 1, 1);
 	var material = new THREE.MeshNormalMaterial();
 	var mesh = new THREE.Mesh(geometry, material);
 	return mesh;
 }
 function update() {
-	// mesh.rotation.x += 0.01;
-	// mesh.rotation.y += 0.01;
 	controls.update();
 	requestAnimationFrame(update);
 	renderer.render(scene, camera);

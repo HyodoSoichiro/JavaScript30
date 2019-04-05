@@ -19,7 +19,6 @@ function init() {
 		camera.updateProjectionMatrix();
 	});
 
-	mesh = createMesh(side);
 	camera.position.set(1, 20, 20);
 
 	let loader = new THREE.GLTFLoader();
@@ -48,12 +47,6 @@ function init() {
 		return renderer;
 	}
 
-	function createMesh(radius) {
-		let geometry = new THREE.IcosahedronGeometry(radius);
-		let material = new THREE.MeshNormalMaterial();
-		let mesh = new THREE.Mesh(geometry, material);
-		return mesh;
-	}
 
 	function update() {
 		controls.update();
